@@ -1,0 +1,51 @@
+body {
+    position: relative;
+}
+    nav {
+        background-color: #21548f;
+        overflow: hidden;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li {
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+
+    li a:hover {
+        background-color: #11263f;
+    }
+
+
+body::before 
+{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://media.istockphoto.com/id/178149253/photo/deep-space-background.jpg?s=612x612&w=0&k=20&c=w1hb2H1C-blV918LoG9mGB02nJY6cLJpR5Szfg7sLqE=');
+    background-color: rgba(255, 255, 255, 0.7);
+    background-size: contain;
+    background-position: center;  
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.image-container{
+    margin-left: calc(50% - 500px);
+}
